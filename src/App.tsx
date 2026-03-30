@@ -3,6 +3,7 @@ import './index.css';
 import Home from './Components/Home';
 import SplashScreen from './Components/SplashScreen';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -12,6 +13,7 @@ function App() {
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
       <Home />
       <SpeedInsights />
+      <Analytics />
     </>
   );
 }
