@@ -4,7 +4,7 @@ export default function Resume() {
     return (
         <section
             id="resume"
-            className="mx-24 pb-24"
+            className="mx-4 md:mx-24 pb-24"
             style={{ fontFamily: "'Poppins', sans-serif" }}
         >
             {/* Section Header */}

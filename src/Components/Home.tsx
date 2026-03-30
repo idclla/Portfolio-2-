@@ -98,9 +98,9 @@ export default function Home() {
         <div id="home" className="min-h-screen bg-[#f5f5f5]">
 
             {/* Floating Navbar */}
-            <nav className="fixed top-5 left-0 right-0 z-50 px-6 mx-24">
+            <nav className="fixed top-5 left-0 right-0 z-50 px-0 md:px-6 mx-4 md:mx-24">
                 <div
-                    className={`flex items-center justify-between gap-1 w-full px-4 py-2.5 rounded-full transition-all duration-300 ${scrolled
+                    className={`flex items-center justify-between gap-1 w-full px-3 md:px-4 py-2 md:py-2.5 rounded-full transition-all duration-300 ${scrolled
                         ? "bg-white/70 backdrop-blur-lg shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-white/20"
                         : "bg-white/40 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-white/40"
                         }`}
@@ -118,7 +118,7 @@ export default function Home() {
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="px-5 py-2 rounded-full text-sm font-medium tracking-wide text-black/60 hover:text-black hover:bg-black/5 transition-all duration-200"
+                                className="px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium tracking-wide text-black/60 hover:text-black hover:bg-black/5 transition-all duration-200"
                             >
                                 {link.label}
                             </a>
@@ -130,10 +130,10 @@ export default function Home() {
             {/* Bento Infinite Scroll */}
             <div className="relative pt-28 pb-12">
                 {/* Left fade */}
-                <div className="pointer-events-none absolute left-0 top-0 h-full w-40 z-10"
+                <div className="pointer-events-none absolute left-0 top-0 h-full w-12 md:w-40 z-10"
                     style={{ background: "linear-gradient(to right, #f5f5f5 0%, transparent 100%)" }} />
                 {/* Right fade */}
-                <div className="pointer-events-none absolute right-0 top-0 h-full w-40 z-10"
+                <div className="pointer-events-none absolute right-0 top-0 h-full w-12 md:w-40 z-10"
                     style={{ background: "linear-gradient(to left, #f5f5f5 0%, transparent 100%)" }} />
 
                 <section
@@ -148,17 +148,17 @@ export default function Home() {
             {/* Hero Section */}
             <section
                 style={{ fontFamily: "'Poppins', sans-serif" }}
-                className="mx-24 pb-20"
+                className="mx-4 md:mx-24 pb-20"
             >
                 <div className="flex flex-col md:flex-row gap-6 items-stretch">
 
                     {/* Introduction Box */}
-                    <div className="flex-1 bg-white rounded-3xl border border-black/5 shadow-[0_4px_24px_rgba(0,0,0,0.08)] p-10 flex flex-col justify-center">
+                    <div className="flex-1 bg-white rounded-3xl border border-black/5 shadow-[0_4px_24px_rgba(0,0,0,0.08)] p-6 md:p-10 flex flex-col justify-center">
                         <span className="text-xs font-semibold tracking-widest text-black/40 uppercase mb-4">
                             About Me
                         </span>
                         <h1
-                            className="text-4xl font-bold text-black mb-5 leading-tight"
+                            className="text-3xl md:text-4xl font-bold text-black mb-4 md:mb-5 leading-tight"
                             style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
                         >
                             Hi, I'm&nbsp;Dave&nbsp;Lacson
