@@ -31,7 +31,7 @@ const projects = [
 const designs = [
     {
         id: 1,
-        title: "SBITC Council Post",
+        title: "SBIT Council Post",
         category: "Social Media",
         description: "Official Facebook post from the SBITC Council, shared as part of the organization's public communications and announcements.",
         image: "",
